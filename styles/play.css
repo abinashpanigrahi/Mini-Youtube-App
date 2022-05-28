@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #181818;
+}
+html{
+    scrollbar-color: rebeccapurple green;
+    scrollbar-width: thin;
+}
+
+
+#navbar{
+    width: 100%;
+    height: 70px;
+    background-color: #282828;
+    display: flex;
+    justify-content: flex-start;
+    gap: 300px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+#logo{
+    width: 10%;
+    height: 100%;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+#container-wrapper{
+    width: 85%;
+    height: 100vh;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    margin-bottom: 50px;
+}
+
+
+#videoContainer{
+    width: 68%;
+    height: 90vh;
+    /* border: 1px solid blue; */
+}
+
+#frame{
+    width: 100%;
+    height: 80%;
+    border: 0px;
+}
+
+#title{
+    margin-top: 10px;
+    color: #fff;
+    padding-bottom: 10px;
+    border-bottom: 1px solid grey;
+}
+
+#channel{
+    margin-top: 20px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#description{
+    margin-top: 10px;
+    color: grey;
+    margin-bottom: 20px;
+}
+
+
+#relatedContainer{
+    width: 30%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: scroll;
+    margin-bottom: 50px ;
+    /* border: 1px solid blue; */
+}
+
+#relatedContainer::-webkit-scrollbar
+{
+    width: 10px;
+    background-color: #181818;
+}
+#relatedContainer::-webkit-scrollbar-thumb
+{
+    width: 10px;
+    background-color: grey;
+    border-radius: 10px;
+}
+
+.mainDiv{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    height: 20vh;
+    cursor: pointer;
+}
+
+
+.thumbnailDiv{
+    width: 48%;
+}
+
+.thumbnailDiv img{
+    width: 100%;
+    height: 100%;
+}
+
+.videoInfoDiv{
+    width: 50%;
+    padding: 10px;
+}
+
+.videoTitle{
+    color: #fff;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    /* white-space: nowrap;
+    text-overflow: ellipsis; */
+}
+
+
+.videoChannel{
+    height: 49%;
+    color: grey;
+    margin-top: 10%;
+    height: 20%;
+    font-size: 13px;
+}
+
+#relatedContainer h3{
+    color: #fff;
+}
